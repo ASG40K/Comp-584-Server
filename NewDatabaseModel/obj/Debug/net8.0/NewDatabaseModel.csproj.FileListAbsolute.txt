@@ -1,0 +1,15 @@
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\bin\Debug\net8.0\NewDatabaseModel.deps.json
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\bin\Debug\net8.0\NewDatabaseModel.dll
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\bin\Debug\net8.0\NewDatabaseModel.pdb
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.AssemblyInfoInputs.cache
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.AssemblyInfo.cs
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.csproj.CoreCompileInputs.cache
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.sourcelink.json
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.dll
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\refint\NewDatabaseModel.dll
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.pdb
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\ref\NewDatabaseModel.dll
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\bin\Debug\net8.0\NewDatabaseModel.runtimeconfig.json
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.genruntimeconfig.cache
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.csproj.AssemblyReference.cache

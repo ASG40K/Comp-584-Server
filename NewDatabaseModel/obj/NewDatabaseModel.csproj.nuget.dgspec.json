@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\NewProjectServer.csproj": {}
+    "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\NewDatabaseModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\NewProjectServer.csproj": {
+    "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\NewDatabaseModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\NewProjectServer.csproj",
-        "projectName": "NewProjectServer",
-        "projectPath": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\NewProjectServer.csproj",
+        "projectUniqueName": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\NewDatabaseModel.csproj",
+        "projectName": "NewDatabaseModel",
+        "projectPath": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\NewDatabaseModel.csproj",
         "packagesPath": "C:\\Users\\asg13797\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\obj\\",
+        "outputPath": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,9 +51,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Swashbuckle.AspNetCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             }
           },
           "imports": [
@@ -68,9 +74,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
