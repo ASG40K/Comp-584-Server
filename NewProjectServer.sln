@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewProjectServer", "NewProjectServer\NewProjectServer.csproj", "{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3212DD65-CF0A-4C06-8E5E-361D4C999C12} = {3212DD65-CF0A-4C06-8E5E-361D4C999C12}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDatabaseModel", "NewDatabaseModel\NewDatabaseModel.csproj", "{3212DD65-CF0A-4C06-8E5E-361D4C999C12}"
 EndProject
