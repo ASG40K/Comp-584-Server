@@ -27,7 +27,7 @@ public partial class WorldCitiesSourceContext : DbContext
     {
         modelBuilder.Entity<City>(entity =>
         {
-            entity.Property(e => e.Id).ValueGeneratedNever();
+            
 
             entity.HasOne(d => d.Country).WithMany(p => p.Cities)
                 .OnDelete(DeleteBehavior.ClientSetNull)

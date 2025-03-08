@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NewDatabaseModel;
 
@@ -10,9 +11,11 @@ using NewDatabaseModel;
 namespace NewDatabaseModel.Migrations
 {
     [DbContext(typeof(WorldCitiesSourceContext))]
-    partial class WorldCitiesSourceContextModelSnapshot : ModelSnapshot
+    [Migration("20250308003512_latlon")]
+    partial class latlon
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,10 +27,7 @@ namespace NewDatabaseModel.Migrations
             modelBuilder.Entity("NewDatabaseModel.City", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CountryId")
                         .HasColumnType("int")
