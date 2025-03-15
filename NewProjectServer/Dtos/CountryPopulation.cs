@@ -18,5 +18,7 @@ namespace NewProjectServer.Dtos
         public string Iso3 { get; set; } = null!;
 
         public int Population { get; set; }
+
+        public int Citycount { get; set; }
     }
 }
