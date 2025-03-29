@@ -13,3 +13,4 @@ C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.
 C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\bin\Debug\net8.0\NewDatabaseModel.runtimeconfig.json
 C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.genruntimeconfig.cache
 C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\obj\Debug\net8.0\NewDatabaseModel.csproj.AssemblyReference.cache
+C:\Users\asg13797\source\repos\NewProjectServer\NewDatabaseModel\bin\Debug\net8.0\appsettings.json

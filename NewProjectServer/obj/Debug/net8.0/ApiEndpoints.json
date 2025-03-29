@@ -284,6 +284,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NewProjectServer.Controllers.SeedController",
+    "Method": "ImportUsersAsync",
+    "RelativePath": "api/Seed/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "NewProjectServer.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

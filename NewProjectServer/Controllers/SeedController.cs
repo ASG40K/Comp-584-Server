@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CsvHelper;
 using CsvHelper.Configuration;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NewDatabaseModel;
@@ -15,10 +16,28 @@ namespace NewProjectServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SeedController(WorldCitiesSourceContext context, IHostEnvironment environment) : ControllerBase
+    public class SeedController(WorldCitiesSourceContext context, IHostEnvironment environment, 
+        UserManager<WorldCitiesUser> userManager) : ControllerBase
     {
         string pathname = Path.Combine(environment.ContentRootPath, "Data/worldcities.csv");
-        [HttpPost("Countries")]
+
+
+        [HttpPost("Users")]
+        public async Task  ImportUsersAsync()
+        {
+            WorldCitiesUser user = new()
+            {
+                UserName = "user",
+                Email = "user@email.com",
+                SecurityStamp = Guid.NewGuid().ToString()
+            };
+
+
+            IdentityResult x = await userManager.CreateAsync(user, "Passw0rd!");
+           int y = await context.SaveChangesAsync();
+        }
+
+            [HttpPost("Countries")]
         public async Task<ActionResult> ImportCountriesAsync()
         {
             // create a lookup dictionary containing all the countries already existing 
