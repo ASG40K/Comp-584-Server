@@ -159,7 +159,8 @@ namespace NewDatabaseModel.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("ID");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -179,14 +180,14 @@ namespace NewDatabaseModel.Migrations
                         .IsUnicode(false)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<int>("Populatoion")
+                    b.Property<int>("Population")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("Cities");
+                    b.ToTable("City");
                 });
 
             modelBuilder.Entity("NewDatabaseModel.Country", b =>
@@ -194,7 +195,7 @@ namespace NewDatabaseModel.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id");
+                        .HasColumnName("ID");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -218,8 +219,7 @@ namespace NewDatabaseModel.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(50)")
-                        .HasColumnName("name");
+                        .HasColumnType("varchar(50)");
 
                     b.HasKey("Id");
 
@@ -348,7 +348,7 @@ namespace NewDatabaseModel.Migrations
                         .WithMany("Cities")
                         .HasForeignKey("CountryId")
                         .IsRequired()
-                        .HasConstraintName("FK_Cities_Country");
+                        .HasConstraintName("FK_City_Country");
 
                     b.Navigation("Country");
                 });

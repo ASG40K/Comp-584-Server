@@ -23,25 +23,27 @@ public partial class WorldCitiesSourceContext : IdentityDbContext<WorldCitiesUse
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
+        // Only configure when active
         if (optionsBuilder.IsConfigured)
         {
             return;
         }
         IConfigurationBuilder builder = new ConfigurationBuilder()
-        .AddJsonFile("appsettings.json");
+            .AddJsonFile("appsettings.json");
         IConfigurationRoot configuration = builder.Build();
         optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
     }
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseSqlServer("server=(localdb)\\mssqllocaldb;database=WorldCities");
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<City>(entity =>
         {
-            
-
             entity.HasOne(d => d.Country).WithMany(p => p.Cities)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Cities_Country");
+                .HasConstraintName("FK_City_Country");
         });
 
         modelBuilder.Entity<Country>(entity =>

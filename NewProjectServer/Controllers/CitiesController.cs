@@ -32,7 +32,7 @@ namespace NewProjectServer.Controllers
                 {
                     Id = city.Id,
                     Name = city.Name,
-                    Populatoion = city.Populatoion,
+                    Populatoion = city.Population,
                     CountryName = city.Country.Name
                 }
             ).ToListAsync();

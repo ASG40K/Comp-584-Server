@@ -114,7 +114,7 @@ namespace NewProjectServer.Controllers
                         Name = record.city,
                         Lat = record.lat,
                          Lon = record.lng,
-                        Populatoion = (int)record.population.Value,
+                        Population = (int)record.population.Value,
                         CountryId = value.Id
                     };
                     context.Cities.Add(city);

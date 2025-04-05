@@ -54,7 +54,7 @@ namespace NewProjectServer.Controllers
                     Name = country.Name,
                     Iso2 = country.Iso2,
                     Iso3 = country.Iso3,
-                    Population = country.Cities.Sum(c => c.Populatoion),
+                    Population = country.Cities.Sum(c => c.Population),
                     Citycount = country.Cities.Count()
                 }).SingleAsync();
 

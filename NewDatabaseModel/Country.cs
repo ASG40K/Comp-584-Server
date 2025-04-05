@@ -10,10 +10,9 @@ namespace NewDatabaseModel;
 public partial class Country
 {
     [Key]
-    [Column("id")]
+    [Column("ID")]
     public int Id { get; set; }
 
-    [Column("name")]
     [StringLength(50)]
     [Unicode(false)]
     public string Name { get; set; } = null!;

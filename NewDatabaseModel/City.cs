@@ -6,9 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace NewDatabaseModel;
 
+[Table("City")]
 public partial class City
 {
     [Key]
+    [Column("ID")]
     public int Id { get; set; }
 
     [StringLength(50)]
@@ -16,10 +18,9 @@ public partial class City
     public string Name { get; set; } = null!;
 
     public decimal Lat { get; set; }
-
     public decimal Lon { get; set; }
 
-    public int Populatoion { get; set; }
+    public int Population { get; set; }
 
     [Column("CountryID")]
     public int CountryId { get; set; }

@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "NewProjectServer.Controllers.AdminController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/Admin/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NewProjectServer.Dtos.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NewProjectServer.Controllers.CitiesController",
     "Method": "GetCities",
     "RelativePath": "api/Cities",
