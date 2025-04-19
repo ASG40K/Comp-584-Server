@@ -6,62 +6,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NewDatabaseModel.Migrations
 {
     /// <inheritdoc />
-    public partial class latLonIdentityTheRealFinal : Migration
+    public partial class initialWithAuthentication : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Cities_Country",
-                table: "Cities");
-
-            migrationBuilder.DropPrimaryKey(
-                name: "PK_Cities",
-                table: "Cities");
-
-            migrationBuilder.RenameTable(
-                name: "Cities",
-                newName: "City");
-
-            migrationBuilder.RenameColumn(
-                name: "name",
-                table: "Country",
-                newName: "Name");
-
-            migrationBuilder.RenameColumn(
-                name: "id",
-                table: "Country",
-                newName: "ID");
-
-            migrationBuilder.RenameColumn(
-                name: "Id",
-                table: "City",
-                newName: "ID");
-
-            migrationBuilder.RenameColumn(
-                name: "Populatoion",
-                table: "City",
-                newName: "Population");
-
-            migrationBuilder.RenameIndex(
-                name: "IX_Cities_CountryID",
-                table: "City",
-                newName: "IX_City_CountryID");
-
-            migrationBuilder.AlterColumn<int>(
-                name: "ID",
-                table: "City",
-                type: "int",
-                nullable: false,
-                oldClrType: typeof(int),
-                oldType: "int")
-                .Annotation("SqlServer:Identity", "1, 1");
-
-            migrationBuilder.AddPrimaryKey(
-                name: "PK_City",
-                table: "City",
-                column: "ID");
-
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -99,6 +48,21 @@ namespace NewDatabaseModel.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Country",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: false),
+                    iso2 = table.Column<string>(type: "char(2)", unicode: false, fixedLength: true, maxLength: 2, nullable: false),
+                    iso3 = table.Column<string>(type: "char(3)", unicode: false, fixedLength: true, maxLength: 3, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Country", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -207,6 +171,28 @@ namespace NewDatabaseModel.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "City",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: false),
+                    Lat = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Lon = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Population = table.Column<int>(type: "int", nullable: false),
+                    CountryID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_City", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_City_Country",
+                        column: x => x.CountryID,
+                        principalTable: "Country",
+                        principalColumn: "ID");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -246,21 +232,15 @@ namespace NewDatabaseModel.Migrations
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_City_Country",
+            migrationBuilder.CreateIndex(
+                name: "IX_City_CountryID",
                 table: "City",
-                column: "CountryID",
-                principalTable: "Country",
-                principalColumn: "ID");
+                column: "CountryID");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_City_Country",
-                table: "City");
-
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -277,64 +257,16 @@ namespace NewDatabaseModel.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "City");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
-            migrationBuilder.DropPrimaryKey(
-                name: "PK_City",
-                table: "City");
-
-            migrationBuilder.RenameTable(
-                name: "City",
-                newName: "Cities");
-
-            migrationBuilder.RenameColumn(
-                name: "Name",
-                table: "Country",
-                newName: "name");
-
-            migrationBuilder.RenameColumn(
-                name: "ID",
-                table: "Country",
-                newName: "id");
-
-            migrationBuilder.RenameColumn(
-                name: "ID",
-                table: "Cities",
-                newName: "Id");
-
-            migrationBuilder.RenameColumn(
-                name: "Population",
-                table: "Cities",
-                newName: "Populatoion");
-
-            migrationBuilder.RenameIndex(
-                name: "IX_City_CountryID",
-                table: "Cities",
-                newName: "IX_Cities_CountryID");
-
-            migrationBuilder.AlterColumn<int>(
-                name: "Id",
-                table: "Cities",
-                type: "int",
-                nullable: false,
-                oldClrType: typeof(int),
-                oldType: "int")
-                .OldAnnotation("SqlServer:Identity", "1, 1");
-
-            migrationBuilder.AddPrimaryKey(
-                name: "PK_Cities",
-                table: "Cities",
-                column: "Id");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Cities_Country",
-                table: "Cities",
-                column: "CountryID",
-                principalTable: "Country",
-                principalColumn: "id");
+            migrationBuilder.DropTable(
+                name: "Country");
         }
     }
 }

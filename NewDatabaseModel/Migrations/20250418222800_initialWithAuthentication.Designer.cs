@@ -12,8 +12,8 @@ using NewDatabaseModel;
 namespace NewDatabaseModel.Migrations
 {
     [DbContext(typeof(WorldCitiesSourceContext))]
-    [Migration("20250405010612_latLonIdentityTheRealFinal")]
-    partial class latLonIdentityTheRealFinal
+    [Migration("20250418222800_initialWithAuthentication")]
+    partial class initialWithAuthentication
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

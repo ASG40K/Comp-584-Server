@@ -1,8 +1,14 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "NewProjectServer",
-    "version": "1.0"
+    "title": "World Cities APIs",
+    "description": "APIs for World Cities",
+    "contact": {
+      "name": "user",
+      "url": "https://canvas.csun.edu/courses/128137",
+      "email": "user@email"
+    },
+    "version": "V1"
   },
   "paths": {
     "/api/Admin/Login": {
@@ -583,7 +589,7 @@
             "type": "number",
             "format": "double"
           },
-          "populatoion": {
+          "population": {
             "type": "integer",
             "format": "int32"
           },
@@ -725,6 +731,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Please enter *only* JWT token",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }
