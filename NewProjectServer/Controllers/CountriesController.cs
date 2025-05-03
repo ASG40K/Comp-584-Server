@@ -30,7 +30,7 @@ namespace NewProjectServer.Controllers
         }
 
         // GET: api/Countries/5
-        [Authorize]
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<Country>> GetCountry(int id)
         {

@@ -7,24 +7,12 @@
       "RelativeMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|solutionrelative:newprojectserver\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|c:\\users\\asg13797\\source\\repos\\newprojectserver\\newprojectserver\\dtos\\countrypopulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|solutionrelative:newprojectserver\\dtos\\countrypopulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|c:\\users\\asg13797\\source\\repos\\newprojectserver\\newprojectserver\\dtos\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|solutionrelative:newprojectserver\\dtos\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|c:\\users\\asg13797\\source\\repos\\newprojectserver\\newprojectserver\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|solutionrelative:newprojectserver\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3212DD65-CF0A-4C06-8E5E-361D4C999C12}|NewDatabaseModel\\NewDatabaseModel.csproj|c:\\users\\asg13797\\source\\repos\\newprojectserver\\newdatabasemodel\\worldcitiessourcecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3212DD65-CF0A-4C06-8E5E-361D4C999C12}|NewDatabaseModel\\NewDatabaseModel.csproj|solutionrelative:newdatabasemodel\\worldcitiessourcecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3212DD65-CF0A-4C06-8E5E-361D4C999C12}|NewDatabaseModel\\NewDatabaseModel.csproj|c:\\users\\asg13797\\source\\repos\\newprojectserver\\newdatabasemodel\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3212DD65-CF0A-4C06-8E5E-361D4C999C12}|NewDatabaseModel\\NewDatabaseModel.csproj|solutionrelative:newdatabasemodel\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|c:\\users\\asg13797\\source\\repos\\newprojectserver\\newprojectserver\\data\\worldcitiesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|solutionrelative:newprojectserver\\data\\worldcitiesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|c:\\users\\asg13797\\source\\repos\\newprojectserver\\newprojectserver\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95FB8FE1-A0DE-4BDC-B7FB-680DB8675C23}|NewProjectServer\\NewProjectServer.csproj|solutionrelative:newprojectserver\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,25 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CountryPopulation.cs",
-              "DocumentMoniker": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Dtos\\CountryPopulation.cs",
-              "RelativeDocumentMoniker": "NewProjectServer\\Dtos\\CountryPopulation.cs",
-              "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Dtos\\CountryPopulation.cs",
-              "RelativeToolTip": "NewProjectServer\\Dtos\\CountryPopulation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T01:47:00.91Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -61,59 +32,35 @@
               "RelativeDocumentMoniker": "NewProjectServer\\Controllers\\CountriesController.cs",
               "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Controllers\\CountriesController.cs",
               "RelativeToolTip": "NewProjectServer\\Controllers\\CountriesController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAEwDgAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T01:10:10.291Z",
+              "WhenOpened": "2025-05-03T00:55:25.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginResult.cs",
+              "DocumentMoniker": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Dtos\\LoginResult.cs",
+              "RelativeDocumentMoniker": "NewProjectServer\\Dtos\\LoginResult.cs",
+              "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Dtos\\LoginResult.cs",
+              "RelativeToolTip": "NewProjectServer\\Dtos\\LoginResult.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T00:15:35.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Controllers\\CitiesController.cs",
-              "RelativeDocumentMoniker": "NewProjectServer\\Controllers\\CitiesController.cs",
-              "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Controllers\\CitiesController.cs",
-              "RelativeToolTip": "NewProjectServer\\Controllers\\CitiesController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCIAAAAfAAAAAAAAAA==",
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Dtos\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "NewProjectServer\\Dtos\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Dtos\\LoginRequestDto.cs",
+              "RelativeToolTip": "NewProjectServer\\Dtos\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T01:07:59.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorldCitiesSourceContext.cs",
-              "DocumentMoniker": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\WorldCitiesSourceContext.cs",
-              "RelativeDocumentMoniker": "NewDatabaseModel\\WorldCitiesSourceContext.cs",
-              "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\WorldCitiesSourceContext.cs",
-              "RelativeToolTip": "NewDatabaseModel\\WorldCitiesSourceContext.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAmwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T00:50:12.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "City.cs",
-              "DocumentMoniker": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\City.cs",
-              "RelativeDocumentMoniker": "NewDatabaseModel\\City.cs",
-              "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewDatabaseModel\\City.cs",
-              "RelativeToolTip": "NewDatabaseModel\\City.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T00:28:17.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WorldCitiesDTO.cs",
-              "DocumentMoniker": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Data\\WorldCitiesDTO.cs",
-              "RelativeDocumentMoniker": "NewProjectServer\\Data\\WorldCitiesDTO.cs",
-              "ToolTip": "C:\\Users\\asg13797\\source\\repos\\NewProjectServer\\NewProjectServer\\Data\\WorldCitiesDTO.cs",
-              "RelativeToolTip": "NewProjectServer\\Data\\WorldCitiesDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T23:38:21.206Z"
+              "WhenOpened": "2025-04-18T23:26:37.834Z"
             }
           ]
         }
